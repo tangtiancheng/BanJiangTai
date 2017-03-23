@@ -1,0 +1,1 @@
+../../../SOMotionDetector/SOMotionDetector/SOStepDetector.h

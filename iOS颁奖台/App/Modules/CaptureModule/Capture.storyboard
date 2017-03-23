@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FW8-PB-eFK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--扫描-->
+        <scene sceneID="nVL-J2-WpU">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="FW8-PB-eFK" customClass="XPCaptureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u0N-5E-jMA"/>
+                        <viewControllerLayoutGuide type="bottom" id="hWL-Zi-0uG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wys-o4-xaV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="capture_tip_rectange" translatesAutoresizingMaskIntoConstraints="NO" id="2GB-oW-K3J">
+                                <rect key="frame" x="160" y="160" width="280" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2GB-oW-K3J" firstAttribute="centerY" secondItem="Wys-o4-xaV" secondAttribute="centerY" id="9nf-dl-ppF"/>
+                            <constraint firstItem="2GB-oW-K3J" firstAttribute="centerX" secondItem="Wys-o4-xaV" secondAttribute="centerX" id="r67-bP-bvd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="扫描" id="trV-z0-eRa"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxa-vo-sdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="capture_tip_rectange" width="280" height="280"/>
+    </resources>
+</document>

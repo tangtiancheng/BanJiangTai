@@ -1,0 +1,101 @@
+//
+//  TCHeadView.m
+//  XPApp
+//
+//  Created by 唐天成 on 16/7/7.
+//  Copyright © 2016年 ShareMerge. All rights reserved.
+//
+
+#import "TCHeadView.h"
+#import "XPTastStoreModel.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NSString+XPRemoteImage.h"
+
+
+@interface TCHeadView()
+//大包中包小包大厅
+@property (weak, nonatomic) IBOutlet UILabel *bigRoom;
+@property (weak, nonatomic) IBOutlet UILabel *midRoom;
+@property (weak, nonatomic) IBOutlet UILabel *smallRoom;
+@property (weak, nonatomic) IBOutlet UILabel *mainHall;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tagAllLabelHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dashImageBottomConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backImageViewBottomConstraint;
+
+//businessTag数组
+//@property (weak, nonatomic) IBOutlet UILabel *tagLabel1;
+//@property (weak, nonatomic) IBOutlet UILabel *tagLabel2;
+//@property (weak, nonatomic) IBOutlet UILabel *tagLabel3;
+//@property (weak, nonatomic) IBOutlet UILabel *tagLabel4;
+//@property (weak, nonatomic) IBOutlet UILabel *tagLabel5;
+//@property (weak, nonatomic) IBOutlet UILabel *tagLabel6;
+
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *tagLabels;
+
+@end
+
+@implementation TCHeadView
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    NSLog(@"%@",NSStringFromCGRect(self.frame));
+    for(int i =0 ;i< self.tagLabels.count;i++){
+        UILabel* tagLabel = self.tagLabels[i];
+        tagLabel.layer.cornerRadius=10;
+        tagLabel.layer.masksToBounds =YES;
+        self.layer.shouldRasterize = YES;
+        self.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    }
+    [[RACObserve(self, privateRoomModel) ignore:nil] subscribeNext:^(XPPrivateRoomModel *x) {
+//        self.privateRoomModel;
+        self.bigRoom.text=[NSString stringWithFormat:@"大包:%@间",x.bigRoom];
+        self.midRoom.text=[NSString stringWithFormat:@"中包:%@间",x.midRoom];
+        self.smallRoom.text=[NSString stringWithFormat:@"小包:%@间",x.smallRoom];
+        self.mainHall.text=[NSString stringWithFormat:@"大厅:%@位",x.bigHall];
+    }];
+    [[RACObserve(self, businessTag)ignore:nil]subscribeNext:^(NSArray* businessTag) {
+//        NSInteger count = businessTag.count;
+        for(int i= 0 ;i<businessTag.count;i++){
+            UILabel* tagLabel =self.tagLabels[i];
+            tagLabel.text = [NSString stringWithFormat:@"  %@  ",businessTag[i]];
+        }
+        for(int i = businessTag.count;i<6;i++){
+            UILabel* tagLabel =self.tagLabels[i];
+            tagLabel.hidden=YES;
+        }
+        if(businessTag.count >3){
+            self.tagAllLabelHeightConstraint.constant=53;
+            self.dashImageBottomConstraint.constant=self.dashImageBottomConstraint.constant+22;
+            self.backImageViewBottomConstraint.constant=self.backImageViewBottomConstraint.constant+22;
+        }else{
+            self.tagAllLabelHeightConstraint.constant=31;
+        }
+    }];
+    
+    RAC(self.storeImageView, image) = [[RACObserve(self, logoString) flattenMap:^RACStream *(id value) {
+        return value ? [value rac_remote_image] : [RACSignal return :nil];
+    }] deliverOn:[RACScheduler mainThreadScheduler]];
+
+}
+
++(instancetype)headView{
+    TCHeadView* headView= [[NSBundle mainBundle] loadNibNamed:@"TCHeadView" owner:nil options:nil][0];
+//    .dashImage.cornerRadius=12;//self.dashImage.height/2;
+    return headView;
+}
+-(void)setView{
+//    self.dashImage.image=[UIImage imageNamed:@"advertisement_03"];
+    self.dashImage.cornerRadius=self.dashImage.height<self.dashImage.width?self.dashImage.height/2:self.dashImage.width/2;
+    self.dashImage.borderWidth=2;
+    self.dashImage.borderColor=[UIColor whiteColor];
+}
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+@end

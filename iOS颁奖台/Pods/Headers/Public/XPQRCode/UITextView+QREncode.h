@@ -1,0 +1,1 @@
+../../../XPQRCode/Lib/XPQREncode/Category/UITextView+QREncode.h

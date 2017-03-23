@@ -1,0 +1,46 @@
+{
+  "name": "XPKit",
+  "version": "1.2.0",
+  "summary": "XPKit is a collection of useful classes to develop Apps faster",
+  "description": "What does it do?\n            ================\n            XPKit adds some useful method to some classes.\n\n            ###Foundation:\n            - NSArray\n- NSDate\n- NSCalendar\n- NSData\n- NSDate\n- NSDictionary\n- NSMutableString\n- NSObject\n- NSTimer\n- NSURLRequest\n- NSUserDefaults\n- NSFileManager\n- NSMutableArray\n- NSMutableDictionary\n- NSNumber\n- NSProcessInfo\n- NSString\n\n            ###UIKit:\n- UIActionSheet\n- UIButton\n- UIAlertView\n- UIApplication\n- UIControl\n- UINavigationBar\n- UINavigationController\n- UIPickerView\n- UIPopoverController\n- UITableView\n- UITableViewController\n- UIToolbar\n- UIColor\n- UIDevice\n- UIFont\n- UIImage\n- UIImageView\n- UILabel\n- UIScrollView\n- UITableView\n- UITextField\n- UIView\n- UIWebView\n- UIWindow\n\n            ###XPKit:\n            - BFApp\n            - BFLog\n            - BFPassword\n            - BFSystemSound",
+  "homepage": "https://coding.net/u/huangxinping/p/XPKit",
+  "screenshots": "http://github.fabriziobrancati.com/XPKit/resources/screenshot.png",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Huang Xinping": "o0402@outlook.com"
+  },
+  "social_media_url": "https://weibo.com/o0402-monor",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPKit.git",
+    "tag": "1.2.0",
+    "branch": "master"
+  },
+  "source_files": "XPKit/*.{h,m}",
+  "public_header_files": "XPKit.h",
+  "resources": "XPKit/Languages/**",
+  "frameworks": "AudioToolbox",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "XPKit",
+      "source_files": "XPKit/XPKit/*.{h,m}",
+      "public_header_files": ""
+    },
+    {
+      "name": "Foundation",
+      "source_files": "XPKit/Additions/Foundation Additions/*.{h,m}",
+      "public_header_files": ""
+    },
+    {
+      "name": "UIKit",
+      "source_files": "XPKit/Additions/UIKit Additions/*.{h,m}",
+      "public_header_files": ""
+    }
+  ]
+}

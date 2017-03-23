@@ -1,0 +1,1 @@
+../../../XPRACSignal/Source/UISearchBar+RACSignal.h

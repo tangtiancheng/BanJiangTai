@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+	-moz-user-select:none;/*火狐*/
+	-webkit-user-select:none;/*webkit浏览器*/
+	-ms-user-select:none;/*IE10*/
+	-khtml-user-select:none;/*早期浏览器*/
+	user-select:none;
+}
+img{
+	width:100%;
+}
+.word{
+	padding:0.25rem;
+}
+.title1{
+	font-family:"微软雅黑";
+	font-size: 0.40rem;
+	color:#060000;
+	font-weight: bold;
+	text-indent: 0.6rem;
+}
+.title2{
+	font-family:"微软雅黑";
+	color:#000003;
+	font-size: 0.36rem;
+	font-weight: bold;
+	text-indent: 0.4rem;
+	background:url(../img/triangle.png) left center no-repeat;
+	background-size:0.36rem;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	margin-top: 0.6rem;
+}
+.important{
+	color:#e8410b;
+}
+p{
+	font-family: STXihei;
+	color:#050505;
+	font-size:0.32rem;
+	margin:0.25rem 0;
+	line-height: 0.5rem;
+}
+.line{
+	height:1px;
+	width:100%;
+	background-color:#e5e5e5;
+}

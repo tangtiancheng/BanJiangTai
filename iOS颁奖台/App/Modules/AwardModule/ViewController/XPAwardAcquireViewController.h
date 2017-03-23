@@ -1,0 +1,13 @@
+//
+//  XPAwardAcquireViewController.h
+//  XPApp
+//
+//  Created by xinpinghuang on 1/22/16.
+//  Copyright 2016 ShareMerge. All rights reserved.
+//
+
+#import "XPBaseViewController.h"
+
+@interface XPAwardAcquireViewController : XPBaseViewController
+
+@end

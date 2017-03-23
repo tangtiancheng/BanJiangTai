@@ -1,0 +1,98 @@
+//
+//  XPBaseTabBarViewController.m
+//  Huaban
+//
+//  Created by huangxinping on 4/21/15.
+//  Copyright (c) 2015 iiseeuu.com. All rights reserved.
+//
+
+#import "XPAutoNIBColor.h"
+#import "XPBaseNavigationViewController.h"
+#import "XPBaseTabBarViewController.h"
+#import "XPBaseViewController.h"
+#import "TasteViewController.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <XPKit/XPKit.h>
+#import "XPBaseNavigationViewController.h"
+#import "XPBaseNavigationBar.h"
+
+
+@interface XPBaseTabBarViewController ()
+
+@end
+
+@implementation XPBaseTabBarViewController
+
+#pragma mark - Life Circle
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tabBar.barTintColor = [XPAutoNIBColor colorWithName:@"c3"];
+    self.tabBar.tintColor = [XPAutoNIBColor colorWithName:@"c2"];
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]];
+    
+    NSMutableArray *tabbarViewControllers = [NSMutableArray arrayWithArray:[self viewControllers]];
+    
+    { // 颁奖台
+        UIViewController *viewController = tabbarViewControllers[0];
+        UIImage *normal = [[UIImage imageNamed:@"tabbar_podium_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        UIImage *selected = [[UIImage imageNamed:@"tabbar_podium_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"颁奖台" image:normal selectedImage:selected];
+    }
+    { // 开奖公告
+        UIViewController *viewController = [self viewControllerWithTabTitle:@"开奖公告" image:@"tabbar_notify_normal" selectedImage:@"tabbar_notify_selected" storyboardName:@"Notice"];
+        [tabbarViewControllers addObject:viewController];
+    }
+    //味道
+    {
+        TasteViewController *tasteViewController = [[UIStoryboard storyboardWithName:@"Taste" bundle:nil]instantiateViewControllerWithIdentifier:@"TasteMain"];
+         UIImage *selected = [[UIImage imageNamed:@"taste_icon_sel"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        tasteViewController.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"味道" image:[UIImage imageNamed:@"taste_icon_nor"] selectedImage:selected];
+        [tasteViewController.tabBarItem setTitleTextAttributes:[NSDictionary
+                                            dictionaryWithObjectsAndKeys: RGBA(123,187,61, 1),
+                                            UITextAttributeTextColor, nil] forState:UIControlStateSelected];
+//        XPBaseNavigationViewController* baseNavigationViewController = [[XPBaseNavigationViewController alloc]initWithRootViewController:tasteViewController];
+        [tabbarViewControllers addObject:tasteViewController];
+    }
+    { // 我
+        UIViewController *viewController = [self viewControllerWithTabTitle:@"我" image:@"tabbar_me_normal" selectedImage:@"tabbar_me_selected" storyboardName:@"Me"];
+        [tabbarViewControllers addObject:viewController];
+    }
+    
+    [self setViewControllers:tabbarViewControllers];
+}
+-(void)viewWillAppear:(BOOL)animated{
+
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - Delegate
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return NO;
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    return YES;
+}
+
+#pragma mark - Private Methods
+- (UIViewController *)viewControllerWithTabTitle:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage storyboardName:(NSString *)storyboardName
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
+    UIViewController *viewController = [storyboard instantiateInitialViewController];
+    viewController.title = title;
+    UIImage *normal = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *selected = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:normal selectedImage:selected];
+    return viewController;
+}
+
+#pragma mark - Getters & Setters
+
+@end

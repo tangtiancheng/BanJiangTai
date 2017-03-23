@@ -1,0 +1,61 @@
+source 'https://gitcafe.com/akuandev/Specs.git'
+
+platform :ios, '7.1'
+inhibit_all_warnings!
+xcodeproj 'XPApp'
+
+target 'XPApp' do
+
+    pod 'XPAutoNIBColor', :git => 'https://git.coding.net/huangxinping/XPAutoNIBColor.git', :tag => '1.0'
+    pod 'XPAutoNIBi18n', :git => 'https://git.coding.net/huangxinping/XPAutoNIBi18n.git', :tag => '1.0'
+    pod 'XPKit', :git => 'https://git.coding.net/huangxinping/XPKit.git', :tag => '1.2.6'
+    pod 'XPArchiver', :git => 'https://git.coding.net/huangxinping/XPArchiver.git', :tag => '1.0.0'
+    pod 'XPStorage', :git => 'https://git.coding.net/huangxinping/XPStorage.git', :tag => '1.1.0'
+    pod 'XPFMDBEncrypt', :git => 'https://git.coding.net/huangxinping/XPFMDBEncrypt.git', :tag => '1.0.2'
+    pod 'XPToast', :git => 'https://git.coding.net/huangxinping/XPToast.git', :tag => '1.0.3'
+    pod 'XPAdPageView', :git => 'https://git.coding.net/huangxinping/XPAdPageView.git', :tag => '0.1.3'
+    pod 'XPTextView', :git => 'https://git.coding.net/huangxinping/XPTextView.git', :tag => '1.0.4'
+    pod 'XPCountDownButton', :git => 'https://git.coding.net/huangxinping/XPCountDownButton.git', :tag => '1.0.1'
+    pod 'XPQRCode', :git => 'https://git.coding.net/huangxinping/XPQRCode.git', :tag => '1.0.1'
+    pod 'XPAlertController', :git => 'https://git.coding.net/huangxinping/XPAlertController.git', :tag => '1.0'
+    pod 'XPViewPager', :git => 'https://git.coding.net/huangxinping/XPViewPager.git', :tag => '1.0.0'
+    pod 'XPBadgeView', :git => 'https://git.coding.net/huangxinping/XPBadgeView.git', :tag => '1.0'
+    pod 'XPWebView', :git => 'https://git.coding.net/huangxinping/XPWebView.git', :tag => '1.1'
+    pod 'XPSwitch', :git => 'https://git.coding.net/huangxinping/XPSwitch.git', :tag => '1.0.0'
+    pod 'XPDatePicker', :git => 'https://git.coding.net/huangxinping/XPDatePicker.git', :tag => '1.0.0'
+    pod 'XPShouldPop', :git => 'https://git.coding.net/huangxinping/XPShouldPop.git', :tag => '1.0.0'
+    pod 'XPMotionDetector', :git => 'https://git.coding.net/huangxinping/XPMotionDetector.git', :tag => '1.0.1'
+    pod 'XPRACSignal'
+
+    pod 'AFNetworking-RACExtensions'
+    pod 'JSONModel-RACExtensions'
+ 
+    pod 'Masonry'
+    
+    pod 'MJRefresh'
+    pod 'SVProgressHUD'
+    pod 'DateTools'
+    pod 'JZNavigationExtension'
+    pod 'IQKeyboardManager'
+    pod 'UISS'
+    pod 'MMPReactiveNotification'
+    pod 'Realm'
+    pod 'SDWebImage'
+    pod 'ShareSDK3'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'MOBFoundation'
+
+    pod 'Zhugeio'
+    pod 'UMengAnalytics-NO-IDFA'
+    pod 'JPush'
+    pod 'BaiduMapKit' #百度地图SDK
+
+    pod 'POP+MCAnimate'
+
+end
+
+target :AppTests, :exclusive => true do
+end
+
+target :AppUITests, :exclusive => true do
+end

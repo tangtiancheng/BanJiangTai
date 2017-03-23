@@ -1,0 +1,27 @@
+{
+  "name": "XPFMDBEncrypt",
+  "version": "1.0.1",
+  "summary": "XPFMDBEncrypt",
+  "homepage": "https://coding.net/u/huangxinping/p/XPFMDBEncrypt/git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Huang Xinping": "o0402@outlook.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPFMDBEncrypt.git",
+    "tag": "1.0.1"
+  },
+  "source_files": "Source/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "FMDB/SQLCipher": [
+      "~> 2.5"
+    ]
+  }
+}

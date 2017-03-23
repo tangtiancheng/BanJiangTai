@@ -1,0 +1,1 @@
+../../../XPMotionDetector/XPMotionDetector/XPLocationManager.h

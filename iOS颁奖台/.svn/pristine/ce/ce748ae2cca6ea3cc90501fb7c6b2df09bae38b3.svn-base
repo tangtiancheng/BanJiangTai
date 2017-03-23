@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XPPlainWinningView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-SE-SHd" customClass="XPBaseView">
+                    <rect key="frame" x="164" y="182" width="272" height="235"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_gift_ico" translatesAutoresizingMaskIntoConstraints="NO" id="hwh-ih-tky">
+                            <rect key="frame" x="53" y="19" width="167" height="109"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="167" id="3a4-2o-riU"/>
+                                <constraint firstAttribute="height" constant="109" id="j2H-F0-oq7"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本次奖品由乐视提供，点击礼物盒，查看大奖。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeO-XU-7jm">
+                            <rect key="frame" x="20" y="147" width="232" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfq-U4-iIy">
+                            <rect key="frame" x="8" y="8" width="256" height="219"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pfq-U4-iIy" firstAttribute="top" secondItem="0Zy-SE-SHd" secondAttribute="top" constant="8" id="776-Pu-wA5"/>
+                        <constraint firstAttribute="bottom" secondItem="pfq-U4-iIy" secondAttribute="bottom" constant="8" id="BKC-Po-VUE"/>
+                        <constraint firstItem="IeO-XU-7jm" firstAttribute="centerX" secondItem="0Zy-SE-SHd" secondAttribute="centerX" id="FQ5-AP-dv7"/>
+                        <constraint firstItem="hwh-ih-tky" firstAttribute="top" secondItem="0Zy-SE-SHd" secondAttribute="top" constant="19" id="QxB-lF-MaC"/>
+                        <constraint firstAttribute="trailing" secondItem="IeO-XU-7jm" secondAttribute="trailing" constant="20" id="Sqw-cG-rVm"/>
+                        <constraint firstItem="hwh-ih-tky" firstAttribute="centerX" secondItem="0Zy-SE-SHd" secondAttribute="centerX" id="T9v-Gk-FdL"/>
+                        <constraint firstItem="hwh-ih-tky" firstAttribute="centerX" secondItem="0Zy-SE-SHd" secondAttribute="centerX" id="eP0-7a-O7R"/>
+                        <constraint firstItem="pfq-U4-iIy" firstAttribute="leading" secondItem="0Zy-SE-SHd" secondAttribute="leading" constant="8" id="eh9-Cd-1zl"/>
+                        <constraint firstAttribute="height" constant="235" id="h88-YE-V7G"/>
+                        <constraint firstItem="IeO-XU-7jm" firstAttribute="leading" secondItem="0Zy-SE-SHd" secondAttribute="leading" constant="20" id="iYd-7e-LQs"/>
+                        <constraint firstAttribute="width" constant="272" id="ltH-GQ-pYa"/>
+                        <constraint firstItem="IeO-XU-7jm" firstAttribute="top" secondItem="hwh-ih-tky" secondAttribute="bottom" constant="19" id="oup-bz-yWY"/>
+                        <constraint firstAttribute="trailing" secondItem="pfq-U4-iIy" secondAttribute="trailing" constant="8" id="v5K-PC-5Ge"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0Zy-SE-SHd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7nX-b2-kxJ"/>
+                <constraint firstItem="0Zy-SE-SHd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sMb-Ay-pNN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="gotoShakeResultButton" destination="pfq-U4-iIy" id="4uA-Vq-lLT"/>
+                <outlet property="sponsorLabel" destination="IeO-XU-7jm" id="2Zb-j0-evW"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_gift_ico" width="167" height="109"/>
+    </resources>
+</document>

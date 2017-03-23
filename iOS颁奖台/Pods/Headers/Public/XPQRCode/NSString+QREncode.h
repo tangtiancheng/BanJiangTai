@@ -1,0 +1,1 @@
+../../../XPQRCode/Lib/XPQREncode/Category/NSString+QREncode.h

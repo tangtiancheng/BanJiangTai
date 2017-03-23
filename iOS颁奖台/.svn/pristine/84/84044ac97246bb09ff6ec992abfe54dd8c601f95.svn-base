@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7W9-T2-ial" customClass="XPPlainShareableAndStartedDrawView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="podium_plain_info_background" translatesAutoresizingMaskIntoConstraints="NO" id="hki-ny-lhL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="分享立即抽奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDY-Ae-nfe">
+                    <rect key="frame" x="35" y="16" width="112" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="即可获得10奖金币哦~" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDo-wE-dBJ">
+                    <rect key="frame" x="210" y="16" width="294" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-tK-9SP">
+                    <rect key="frame" x="521" y="9" width="63" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="Fhp-xi-Wfo"/>
+                        <constraint firstAttribute="width" constant="63" id="VJl-3i-Paa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="GO" backgroundImage="podium_button_orange"/>
+                    <state key="disabled" backgroundImage="podium_button_gray"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fvI-tK-9SP" firstAttribute="leading" secondItem="YDo-wE-dBJ" secondAttribute="trailing" constant="58" id="0ml-g2-9wm"/>
+                <constraint firstItem="uDY-Ae-nfe" firstAttribute="leading" secondItem="7W9-T2-ial" secondAttribute="leading" constant="35" id="2HL-Ax-WCG"/>
+                <constraint firstItem="fvI-tK-9SP" firstAttribute="leading" secondItem="YDo-wE-dBJ" secondAttribute="trailing" constant="58" id="8Gz-Gh-oZL"/>
+                <constraint firstAttribute="bottom" secondItem="uDY-Ae-nfe" secondAttribute="bottom" constant="16" id="M99-pG-cqO"/>
+                <constraint firstAttribute="bottom" secondItem="fvI-tK-9SP" secondAttribute="bottom" constant="9" id="U5E-8Z-14a"/>
+                <constraint firstAttribute="trailing" secondItem="fvI-tK-9SP" secondAttribute="trailing" constant="19" id="hdc-lH-LA2"/>
+                <constraint firstAttribute="bottom" secondItem="uDY-Ae-nfe" secondAttribute="bottom" constant="20" id="khy-bN-2vu"/>
+                <constraint firstItem="fvI-tK-9SP" firstAttribute="leading" secondItem="YDo-wE-dBJ" secondAttribute="trailing" constant="17" id="qst-Sz-gDl"/>
+                <constraint firstAttribute="bottom" secondItem="YDo-wE-dBJ" secondAttribute="bottom" constant="20" id="sgT-tw-wer"/>
+                <constraint firstAttribute="bottom" secondItem="YDo-wE-dBJ" secondAttribute="bottom" constant="16" id="xP9-Tu-Kv9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="khy-bN-2vu"/>
+                    <exclude reference="sgT-tw-wer"/>
+                    <exclude reference="0ml-g2-9wm"/>
+                    <exclude reference="8Gz-Gh-oZL"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="shareButton" destination="fvI-tK-9SP" id="nEN-DG-NR6"/>
+            </connections>
+            <point key="canvasLocation" x="400" y="358.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="podium_button_gray" width="63" height="29"/>
+        <image name="podium_button_orange" width="63" height="29"/>
+        <image name="podium_plain_info_background" width="375" height="39"/>
+    </resources>
+</document>

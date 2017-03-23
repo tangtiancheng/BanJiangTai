@@ -1,0 +1,26 @@
+{
+  "name": "XPSwitch",
+  "version": "1.0.0",
+  "summary": "Customizable control based on UISwitch and UISegmentedControl written in Objective-C",
+  "description": "* Easily customizable control with nice animations\n* Supporting pan or swipe interactions\n* Requires very little setup - images are not needed\n* Beautiful font color inversion effect - label color changes per pixel:\n* Automatic adjustment based on number of items\n* Inspired by UISegmentedControl and UISwitch",
+  "homepage": "https://coding.net/u/huangxinping/p/XPSwitch/git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "huangxinping": "o0402@outlook.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPSwitch.git",
+    "tag": "1.0.0"
+  },
+  "source_files": [
+    "Source",
+    "Source/**/*.{h,m}"
+  ],
+  "requires_arc": true
+}

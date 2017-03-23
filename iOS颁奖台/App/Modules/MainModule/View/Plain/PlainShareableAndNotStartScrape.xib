@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eZI-K4-Rqt" customClass="XPPlainShareableAndNotStartScrapeView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HF7-1V-cde">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.25882352939999997" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="podium_plain_info_background" translatesAutoresizingMaskIntoConstraints="NO" id="xLY-qr-Yyu">
+                    <rect key="frame" x="0.0" y="40" width="600" height="47"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="分享即可参与刮奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13Q-qk-7p0">
+                    <rect key="frame" x="20" y="56" width="127" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="多分享多快乐! 一次分享可获得10奖金币!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-o9-Jr0">
+                    <rect key="frame" x="147" y="56" width="372" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间 2015年12月14日～20日 10:30 -11:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="PPY-oR-SgF">
+                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCu-SV-NH8">
+                    <rect key="frame" x="521" y="49" width="63" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="GWA-ej-SB8"/>
+                        <constraint firstAttribute="width" constant="63" id="Vs2-2B-Ewr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="GO" backgroundImage="podium_button_orange"/>
+                    <state key="disabled" backgroundImage="podium_button_gray"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gCu-SV-NH8" secondAttribute="bottom" constant="9" id="98o-13-JGt"/>
+                <constraint firstItem="gCu-SV-NH8" firstAttribute="leading" secondItem="htQ-o9-Jr0" secondAttribute="trailing" constant="2" id="Mxt-Zm-Va6"/>
+                <constraint firstItem="PPY-oR-SgF" firstAttribute="top" secondItem="eZI-K4-Rqt" secondAttribute="top" constant="11" id="Qwl-yO-Bec"/>
+                <constraint firstItem="PPY-oR-SgF" firstAttribute="leading" secondItem="eZI-K4-Rqt" secondAttribute="leading" constant="8" id="Rn4-lf-8l3"/>
+                <constraint firstItem="gCu-SV-NH8" firstAttribute="leading" secondItem="htQ-o9-Jr0" secondAttribute="trailing" constant="58" id="TIg-Dd-KfQ"/>
+                <constraint firstItem="gCu-SV-NH8" firstAttribute="leading" secondItem="htQ-o9-Jr0" secondAttribute="trailing" constant="17" id="Wjb-EI-YwQ"/>
+                <constraint firstAttribute="trailing" secondItem="gCu-SV-NH8" secondAttribute="trailing" constant="19" id="Xfq-vc-UrX"/>
+                <constraint firstItem="13Q-qk-7p0" firstAttribute="leading" secondItem="eZI-K4-Rqt" secondAttribute="leading" constant="20" id="aDb-vn-jef"/>
+                <constraint firstItem="htQ-o9-Jr0" firstAttribute="leading" secondItem="13Q-qk-7p0" secondAttribute="trailing" constant="8" id="aiX-9j-tTs"/>
+                <constraint firstAttribute="bottom" secondItem="13Q-qk-7p0" secondAttribute="bottom" constant="16" id="apr-S5-6D5"/>
+                <constraint firstAttribute="bottom" secondItem="htQ-o9-Jr0" secondAttribute="bottom" constant="16" id="bch-zg-vW3"/>
+                <constraint firstItem="htQ-o9-Jr0" firstAttribute="leading" secondItem="13Q-qk-7p0" secondAttribute="trailing" id="dI6-QW-YBn"/>
+                <constraint firstAttribute="trailing" secondItem="PPY-oR-SgF" secondAttribute="trailing" constant="8" id="edR-Bh-i5e"/>
+                <constraint firstAttribute="bottom" secondItem="htQ-o9-Jr0" secondAttribute="bottom" constant="20" id="nQG-on-zpg"/>
+                <constraint firstItem="13Q-qk-7p0" firstAttribute="leading" secondItem="eZI-K4-Rqt" secondAttribute="leading" constant="35" id="wLm-xm-Mmd"/>
+                <constraint firstAttribute="bottom" secondItem="13Q-qk-7p0" secondAttribute="bottom" constant="20" id="wVF-Om-q8d"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wLm-xm-Mmd"/>
+                    <exclude reference="wVF-Om-q8d"/>
+                    <exclude reference="aiX-9j-tTs"/>
+                    <exclude reference="nQG-on-zpg"/>
+                    <exclude reference="TIg-Dd-KfQ"/>
+                    <exclude reference="Wjb-EI-YwQ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="activityTimeLabel" destination="PPY-oR-SgF" id="Ra1-bQ-DJJ"/>
+                <outlet property="shareButton" destination="gCu-SV-NH8" id="RdO-kY-fl5"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="204.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="podium_button_gray" width="63" height="29"/>
+        <image name="podium_button_orange" width="63" height="29"/>
+        <image name="podium_plain_info_background" width="375" height="39"/>
+    </resources>
+</document>

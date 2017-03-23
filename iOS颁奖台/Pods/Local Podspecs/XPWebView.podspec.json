@@ -1,0 +1,24 @@
+{
+  "name": "XPWebView",
+  "version": "1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "homepage": "https://coding.net/u/huangxinping/p/XPWebView/git",
+  "authors": {
+    "o0402": "o0402@outlook.com"
+  },
+  "summary": "对UIWebView增加进度条、增加IB可视化控制，从此以后可以直接在Storyboard上编辑URL，不需要写任何代码了！",
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPWebView.git",
+    "tag": "1.0"
+  },
+  "source_files": "Source/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "NJKWebViewProgress": [
+
+    ]
+  }
+}

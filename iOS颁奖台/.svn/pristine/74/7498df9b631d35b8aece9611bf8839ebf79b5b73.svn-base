@@ -1,0 +1,22 @@
+{
+  "name": "XPStorage",
+  "version": "1.1.0",
+  "summary": "XPStorage",
+  "homepage": "https://coding.net/u/huangxinping/p/XPStorage/git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Huang Xinping": "o0402@outlook.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPStorage.git",
+    "tag": "1.1.0"
+  },
+  "source_files": "Storage/*.{h,m}",
+  "requires_arc": true
+}

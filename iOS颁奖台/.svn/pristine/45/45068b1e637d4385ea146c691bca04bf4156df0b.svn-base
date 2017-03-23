@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>味道美食推荐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/advertisement.css">
+	</head>
+	<body>
+		<img src="img/advertisement_01.png" />
+		<div class="word">
+			<div class="title1">京城夜宵美食探秘——晚上饿了就来这些地方试试吧</div>
+			<p>
+				你是不是经常感叹北京这么大座城市夜里找家吃饭的地方怎么一点都不容易？唱个歌，看个电影出来，甚至加完班走出写字楼，大街小巷的餐厅馆子怎么就打烊了？其实归根到底，还是因为大北京实在太！大！了！你住南四环，很难知道北四环有家深夜炸鸡店，而经常出没国贸大望路高级写字楼的你，也肯定无法想到午夜十分南城街边还开着一家地道烧烤馆子。
+			</p>
+			<p>
+				今天小编就带你去认认路，看看帝都有什么夜里还营业的好吃馆子。地方太多，篇幅有限，我们先来一期走着~
+			</p>
+			<div class="line"></div>
+			<div class="title2">鸟屯</div>
+			<p>
+				到店理由：一口串烧一口烧酒，可以算是深夜中的幸福味道。鸡翅外皮酥香，配方和原料都是从日本进口过来的。日本清酒和汽酒也好喝。吃一顿，非常治愈。
+			</p>
+			<img src="img/advertisement_02.png" />
+			<p>
+				<span class="important">美食地址</span>：工体东路甲6号智胜快捷酒店1楼
+			</p>
+			<p>
+				<span class="important">营业时间</span>：11:30-14:30 17:30-01:00
+			</p>
+			<p>
+				<span class="important">人均消费</span>：¥120/人
+			</p>
+			<div class="title2">桃园眷村</div>
+			<p>
+				到店理由：坐落在三里屯的这家台湾小吃店，主打咸豆浆、肉燥饭团、眷村烧饼，装修风格很文艺，非常有宝岛台湾的小清新范儿。
+			</p>
+			<img src="img/advertisement_03.png" />
+			<p>
+				<span class="important">美食地址</span>：三里屯太古里南区S9-10
+			</p>
+			<p>
+				<span class="important">营业时间</span>：07:00-02:30
+			</p>
+			<p>
+				<span class="important">人均消费</span>：¥40/人
+			</p>
+			<div class="title2">8号苑秘制火锅(西单二店)</div>
+			<p>
+				到店理由：主打四川串串香火锅，点菜是填写试卷的形式，试卷最后还有“送分”题，答对了还能免费获赠冰品或甜点。店内贴满了各种奖状，装修也都是上学时期的风格，满满的都是80后的回忆。
+			</p>
+			<img src="img/advertisement_04.png" />
+			<p>
+				<span class="important">美食地址</span>：太仆寺街23号(府右街宾馆西侧)
+			</p>
+			<p>
+				<span class="important">营业时间</span>：11:00-04:00
+			</p>
+			<p>
+				<span class="important">人均消费</span>：¥80/人
+			</p>
+			<div class="title2">麻记串吧</div>
+			<p>
+				到店理由：南二环边上地道的烧烤店，因为教主带着AB光顾过而名声大起。用料都是牛街直供的新鲜羊肉，芝士大虾也是店里的招牌菜品。夏天又多了个撸串好地方。
+			</p>
+			<img src="img/advertisement_05.png" />
+			<p>
+				<span class="important">美食地址</span>：右安门西头条2号(右安门桥西南侧）
+			</p>
+			<p>
+				<span class="important">营业时间</span>：11:30-13:00  17:30-24:00
+			</p>
+			<p>
+				<span class="important">人均消费</span>：¥75/人
+			</p>
+		</div>
+		
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/advertisement.js" ></script>
+	</body>
+</html>

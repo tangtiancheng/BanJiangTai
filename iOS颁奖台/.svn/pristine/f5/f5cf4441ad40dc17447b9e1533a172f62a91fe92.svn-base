@@ -1,0 +1,80 @@
+//
+//  DishDetailViewController.m
+//  XPApp
+//
+//  Created by Pua on 16/7/11.
+//  Copyright © 2016年 ShareMerge. All rights reserved.
+//
+
+#import "DishDetailViewController.h"
+#import "XPTastStoreModel.h"
+
+#define ImageHight 200.0f
+
+@interface DishDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *dishTableView;
+    UIImageView *_zoomImageView;
+}
+@end
+
+@implementation DishDetailViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    _dishModel = [[XPDashInfoModel alloc]init];
+    dishTableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+    dishTableView.delegate = self;
+    dishTableView.dataSource = self;
+    dishTableView.contentInset = UIEdgeInsetsMake(ImageHight, 0, 0, 0);
+    [self.view addSubview:dishTableView];
+    
+    _zoomImageView.frame = CGRectMake(0, -ImageHight, self.view.frame.size.width, ImageHight);
+    _zoomImageView.contentMode = UIViewContentModeScaleAspectFill;//重点（不设置那将只会被纵向拉伸）
+    _zoomImageView.autoresizesSubviews = YES;
+
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    CGFloat y = scrollView.contentOffset.y;//根据实际选择加不加上NavigationBarHight（44、64 或者没有导航条）
+    if (y < -ImageHight) {
+        CGRect frame = _zoomImageView.frame;
+        frame.origin.y = y;
+        frame.size.height =  -y;//contentMode = UIViewContentModeScaleAspectFill时，高度改变宽度也跟着改变
+        _zoomImageView.frame = frame;
+    }
+    
+}
+
+#pragma mark - tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 20;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"这个自己命名"];
+    if(cell==nil){
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"这个自己命名"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.separatorInset=UIEdgeInsetsZero;
+        cell.clipsToBounds = YES;
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"第 %ld 行",indexPath.row];
+    
+    return cell;
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+@end

@@ -1,0 +1,19 @@
+{
+  "name": "XPViewPager",
+  "version": "1.0.1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "homepage": "https://coding.net/u/huangxinping/p/XPViewPager/git",
+  "authors": {
+    "o0402": "o0402@outlook.com"
+  },
+  "summary": "一个可高度自定义的ViewPager。",
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPViewPager.git",
+    "tag": "1.0.1"
+  },
+  "source_files": "Source/*.{h,m}",
+  "requires_arc": true
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Igp-Ea-5c9" customClass="XPPlainJoinedView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-Hz-ijC">
+                    <rect key="frame" x="0.0" y="52" width="375" height="61"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.25882352939999997" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="a7v-Je-JmM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="streamer" translatesAutoresizingMaskIntoConstraints="NO" id="lcA-gQ-hJe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-qR-q1K">
+                    <rect key="frame" x="0.0" y="67" width="375" height="46"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.1137254902" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="lUw-m2-C0G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日机会用完啦 回颁奖台看看!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="dh3-1T-vva">
+                    <rect key="frame" x="1" y="36" width="262" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrC-Sw-IIR">
+                    <rect key="frame" x="291" y="34" width="64" height="29"/>
+                    <state key="normal" backgroundImage="goBack"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="q8G-Hz-ijC" secondAttribute="bottom" id="0C4-b4-5IM"/>
+                <constraint firstItem="dh3-1T-vva" firstAttribute="width" secondItem="Igp-Ea-5c9" secondAttribute="width" multiplier="0.7" id="4YI-7J-lwm"/>
+                <constraint firstAttribute="bottom" secondItem="lcA-gQ-hJe" secondAttribute="bottom" constant="40" id="5CD-db-o4Y"/>
+                <constraint firstItem="lcA-gQ-hJe" firstAttribute="top" secondItem="Igp-Ea-5c9" secondAttribute="top" id="9WD-nM-Mea"/>
+                <constraint firstAttribute="bottom" secondItem="nLb-qR-q1K" secondAttribute="bottom" id="EbW-Ln-Kf7"/>
+                <constraint firstItem="dh3-1T-vva" firstAttribute="centerX" secondItem="Igp-Ea-5c9" secondAttribute="centerX" multiplier="0.7" id="FPi-OO-hCP"/>
+                <constraint firstItem="lcA-gQ-hJe" firstAttribute="leading" secondItem="Igp-Ea-5c9" secondAttribute="leading" id="LEi-qo-D2T"/>
+                <constraint firstItem="q8G-Hz-ijC" firstAttribute="leading" secondItem="Igp-Ea-5c9" secondAttribute="leading" id="MqM-7W-aRV"/>
+                <constraint firstItem="YrC-Sw-IIR" firstAttribute="centerY" secondItem="Igp-Ea-5c9" secondAttribute="centerY" multiplier="0.85" id="Xb7-kD-vY3"/>
+                <constraint firstAttribute="trailing" secondItem="q8G-Hz-ijC" secondAttribute="trailing" id="YsL-Ap-mbs"/>
+                <constraint firstItem="nLb-qR-q1K" firstAttribute="leading" secondItem="Igp-Ea-5c9" secondAttribute="leading" id="cKG-z0-SJc"/>
+                <constraint firstAttribute="trailing" secondItem="lcA-gQ-hJe" secondAttribute="trailing" id="d6d-d2-ZtX"/>
+                <constraint firstAttribute="trailing" secondItem="nLb-qR-q1K" secondAttribute="trailing" id="iPB-uC-RQk"/>
+                <constraint firstItem="dh3-1T-vva" firstAttribute="centerY" secondItem="Igp-Ea-5c9" secondAttribute="centerY" multiplier="0.8" id="roV-mW-IVB"/>
+                <constraint firstItem="YrC-Sw-IIR" firstAttribute="centerX" secondItem="Igp-Ea-5c9" secondAttribute="centerX" multiplier="1.72" id="yM6-jc-pek"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityTimeLabel" destination="nLb-qR-q1K" id="mfS-ek-BcJ"/>
+                <outlet property="popRootButton" destination="YrC-Sw-IIR" id="QCR-R1-QHS"/>
+            </connections>
+            <point key="canvasLocation" x="420.5" y="255.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="goBack" width="64" height="29"/>
+        <image name="streamer" width="376" height="69"/>
+    </resources>
+</document>

@@ -1,0 +1,19 @@
+//
+//  TCTableViewCell.m
+//  味道demo
+//
+//  Created by 唐天成 on 16/7/6.
+//  Copyright © 2016年 唐天成. All rights reserved.
+//
+
+#import "TCTableViewCell.h"
+@interface TCTableViewCell()
+
+
+@end
+
+@implementation TCTableViewCell
+-(void)awakeFromNib{
+
+}
+@end

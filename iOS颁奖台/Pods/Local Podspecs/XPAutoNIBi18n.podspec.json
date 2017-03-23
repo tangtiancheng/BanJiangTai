@@ -1,0 +1,19 @@
+{
+  "name": "XPAutoNIBi18n",
+  "version": "1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "homepage": "https://coding.net/u/huangxinping/p/XPAutoNIBi18n/git",
+  "authors": {
+    "o0402": "o0402@outlook.com"
+  },
+  "summary": "自动化国际化",
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPAutoNIBi18n.git",
+    "tag": "1.0"
+  },
+  "source_files": "Source/*.{h,m}",
+  "requires_arc": true
+}

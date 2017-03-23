@@ -1,0 +1,1 @@
+../../../XPAutoNIBColor/Source/XPAutoNIBColor.h

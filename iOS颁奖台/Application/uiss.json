@@ -1,0 +1,132 @@
+{
+    "Variables": {
+        "primaryColor": "#FFFFFF",
+        "secondaryColor": "#C84240",
+        "tertiaryColor": "#000000"
+    },
+    "UITabBar": {
+        "barTintColor": "$primaryColor",
+        "tintColor": "$secondaryColor",
+        "UITabBarItem": {
+            "titleTextAttributes:normal": {
+                "textColor": "lightGray",
+                "font": [
+                         "HelveticaNeue-Light",
+                         9
+                         ]
+            },
+            "titleTextAttributes:selected": {
+                "textColor": "$secondaryColor",
+                "font": [
+                         "HelveticaNeue-Light",
+                         9
+                         ]
+            }
+        }
+    },
+    "UINavigationBar": {
+        "barTintColor": "$secondaryColor",
+        "tintColor": "$primaryColor",
+        "titleTextAttributes": {
+            "textColor": "$primaryColor",
+            "font": [
+                     "HelveticaNeue-Light",
+                     17
+                     ]
+        },
+        "-UIButton": {
+            "titleColor:normal": "$secondaryColor"
+        }
+    },
+    "-UIButton": {
+        "titleColor:normal": "$secondaryColor"
+    },
+    "-UISwitch": {
+        "onTintColor": "$secondaryColor",
+        "tintColor": "$primaryColor"
+    },
+    "-UISearchBar": {
+        "barTintColor": "$primaryColor",
+        "tintColor": "$primaryColor",
+        "UIBarButtonItem": {
+            "titleTextAttributes:normal": {
+                "textColor": "$secondaryColor"
+            }
+        }
+    },
+    "UIActivityIndicatorView": {
+        "color": "$secondaryColor"
+    },
+    "UISegmentedControl": {
+        "tintColor": "$secondaryColor"
+    },
+    "UISlider": {
+        "minimumTrackTintColor": "$primaryColor"
+    },
+    "UIToolbar": {
+        "barTintColor": "$primaryColor",
+        "tintColor": "$secondaryColor"
+    },
+    "UIPageControl": {
+        "pageIndicatorTintColor": "$primaryColor",
+        "currentPageIndicatorTintColor": "$secondaryColor",
+        "backgroundColor": "clear"
+    },
+    "-UILabel": {
+        "textColor": "$primaryColor",
+        "font": [
+                 "HelveticaNeue-Light",
+                 17
+                 ]
+    },
+    "-UITableView": {
+        "tintColor": "$primaryColor",
+        "separatorColor": "$secondaryColor"
+    },
+    "UIBarButtonItem": {
+        "titleTextAttributes:normal": {
+            "textColor": "$primaryColor",
+            "font": [
+                     "HelveticaNeue-Light",
+                     14
+                     ]
+        },
+        "titleTextAttributes:disabled": {
+            "textColor": "#A9A9A9",
+            "font": [
+                     "HelveticaNeue-Light",
+                     14
+                     ]
+        }
+    },
+    "-XPBaseViewController": {
+        "UICollectionView": {
+            "UILabel": {
+                "textColor": "$primaryColor",
+                "font": [
+                         "HelveticaNeue-Light",
+                         10
+                         ]
+            }
+        },
+        "UIButton": {
+            "titleColor:normal": [
+                                  "white",
+                                  0.8
+                                  ],
+            "titleColor:highlighted": "white",
+            "titleEdgeInsets": [
+                                1,
+                                0,
+                                0,
+                                0
+                                ],
+            "UILabel": {
+                "font": [
+                         "HelveticaNeue-Light",
+                         18
+                         ]
+            }
+        }
+    }
+}

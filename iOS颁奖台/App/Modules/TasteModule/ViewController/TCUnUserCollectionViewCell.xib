@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZNN-gT-xIU" customClass="TCUnUserCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="159"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-zz-cuh">
+                        <rect key="frame" x="131" y="98" width="40" height="40"/>
+                        <state key="normal" image="calendar_delete"/>
+                        <connections>
+                            <action selector="addBtnClick:" destination="ZNN-gT-xIU" eventType="touchUpInside" id="ksY-L5-bjX"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_dish_item_gray" translatesAutoresizingMaskIntoConstraints="NO" id="yNy-Yv-ma8">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="159"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yNy-Yv-ma8" firstAttribute="leading" secondItem="ZNN-gT-xIU" secondAttribute="leading" id="ZMJ-9D-ggk"/>
+                <constraint firstItem="yNy-Yv-ma8" firstAttribute="top" secondItem="ZNN-gT-xIU" secondAttribute="top" id="nty-bM-Yhh"/>
+                <constraint firstAttribute="trailing" secondItem="yNy-Yv-ma8" secondAttribute="trailing" id="tKv-y3-3Lk"/>
+                <constraint firstAttribute="bottom" secondItem="yNy-Yv-ma8" secondAttribute="bottom" id="uhA-Wm-M5l"/>
+            </constraints>
+            <size key="customSize" width="179" height="159"/>
+            <point key="canvasLocation" x="136.5" y="186.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendar_delete" width="27" height="27"/>
+        <image name="icon_dish_item_gray" width="292" height="293"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XPPlainTheShakeNumberOverView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-SE-SHd" customClass="XPBaseView">
+                    <rect key="frame" x="164" y="183" width="272" height="235"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="每日限摇3次,您今日摇奖次数已用完,明天再来吧!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGI-Ay-9ye">
+                            <rect key="frame" x="14" y="84" width="246" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_star_ico" translatesAutoresizingMaskIntoConstraints="NO" id="Xv6-WF-Ubt">
+                            <rect key="frame" x="98" y="8" width="76" height="76"/>
+                            <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="eGA-oc-0Kn"/>
+                                <constraint firstAttribute="width" constant="76" id="qZz-de-KEh"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vv-ZL-v8k">
+                            <rect key="frame" x="61" y="166" width="150" height="34"/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="4Z7-uD-CbQ"/>
+                                <constraint firstAttribute="height" constant="32" id="FMD-Ed-ZuA"/>
+                            </constraints>
+                            <state key="normal" title="我知道啦">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Xv6-WF-Ubt" firstAttribute="centerX" secondItem="0Zy-SE-SHd" secondAttribute="centerX" id="fLh-u7-yuV"/>
+                        <constraint firstItem="qGI-Ay-9ye" firstAttribute="leading" secondItem="0Zy-SE-SHd" secondAttribute="leading" constant="13" id="gSr-lt-DVN"/>
+                        <constraint firstAttribute="height" constant="235" id="h88-YE-V7G"/>
+                        <constraint firstItem="Xv6-WF-Ubt" firstAttribute="top" secondItem="0Zy-SE-SHd" secondAttribute="top" constant="8" id="hzc-e8-HOb"/>
+                        <constraint firstAttribute="width" constant="272" id="ltH-GQ-pYa"/>
+                        <constraint firstAttribute="trailing" secondItem="qGI-Ay-9ye" secondAttribute="trailing" constant="13" id="y85-df-nlv"/>
+                        <constraint firstAttribute="bottom" secondItem="1vv-ZL-v8k" secondAttribute="bottom" constant="36" id="yYV-Zf-rfs"/>
+                        <constraint firstItem="1vv-ZL-v8k" firstAttribute="centerX" secondItem="0Zy-SE-SHd" secondAttribute="centerX" id="zqs-kl-eX8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0Zy-SE-SHd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1dH-3O-MZu"/>
+                <constraint firstItem="0Zy-SE-SHd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PhW-Ab-mez"/>
+                <constraint firstItem="0Zy-SE-SHd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RuA-oK-Hi0"/>
+                <constraint firstItem="0Zy-SE-SHd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ci5-II-wux"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="backView" destination="0Zy-SE-SHd" id="iUV-Ac-f58"/>
+                <outlet property="goTomorrowBtn" destination="1vv-ZL-v8k" id="iqI-HR-IZx"/>
+                <outlet property="iconView" destination="Xv6-WF-Ubt" id="rMm-Yv-J5L"/>
+                <outlet property="shakeNumberOverLabel" destination="qGI-Ay-9ye" id="ool-tl-RR5"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_star_ico" width="97" height="91"/>
+    </resources>
+</document>

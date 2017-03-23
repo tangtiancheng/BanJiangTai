@@ -1,0 +1,60 @@
+{
+    "Variables": {
+    },
+    "UISSConsoleViewController": {
+        "UITabBar": {
+            "tintColor": "black",
+            "selectedImageTintColor": "lightGray",
+            "UITabBarItem": {
+                "titleTextAttributes:selected": {"textColor": "white"},
+                "titleTextAttributes:normal": {"textColor": "lightGray"}
+            }
+        },
+        "UISwitch": {
+            "onTintColor": "lightGray"
+        },
+        "UINavigationBar": {
+            "tintColor": "lightGray",
+            "backgroundImage:default": null,
+            "backgroundImage:landscapePhone": null,
+            "UISegmentedControl": {
+                "backgroundImage:normal:default": null,
+                "backgroundImage:disabled:default": null,
+
+                "dividerImage:disabled:normal:default": null,
+                "dividerImage:normal:disabled:default": null,
+                "dividerImage:normal:normal:default": null
+            }
+        },
+        "UISSErrorsViewController": {
+            "UILabel": {
+                "textAttributes": {
+                    "font": ["HelveticaNeue-Medium", 14]
+                }
+            }
+        },
+        "UISSSettingsViewController": {
+            "UILabel": {
+                "textAttributes": {
+                    "textColor": "darkGray"
+                },
+                "backgroundUISSColor": "white"
+            },
+            "UITableView": {
+                "backgroundUISSColor": "white",
+                "UITableViewCell": {
+                    "UILabel": {
+                        "textAttributes": {
+                            "font": 14
+                        }
+                    }
+                }
+            }
+        },
+        "UISSGeneratedCodeViewController": {
+            "UITextView": {
+                "font": ["CourierNewPSMT", 12]
+            }
+        }
+    }
+}

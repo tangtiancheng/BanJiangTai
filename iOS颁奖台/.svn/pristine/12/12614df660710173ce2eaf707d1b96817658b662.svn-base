@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PMF-th-zhv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--邀请-->
+        <scene sceneID="NqP-hb-LuM">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="PMF-th-zhv" customClass="XPInviteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yoh-6J-bdk"/>
+                        <viewControllerLayoutGuide type="bottom" id="JvM-Yb-O0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ew-kG-yFr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H7E-CQ-wXC">
+                                <rect key="frame" x="237" y="100" width="125" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="bRo-qD-0NA"/>
+                                    <constraint firstAttribute="height" constant="125" id="rTk-mo-K16"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫一扫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLq-aB-q6x">
+                                <rect key="frame" x="282" y="231" width="36" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="成功邀请一位好友可获得10奖金币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-Wl-7zW">
+                                <rect key="frame" x="203" y="254" width="182" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CfO-dC-60M">
+                                <rect key="frame" x="0.0" y="303" width="600" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="vdO-fE-kFh"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="49" id="VkG-K6-E9q">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="49"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VkG-K6-E9q" id="rb5-1f-eoq">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="48.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="common_wechat" translatesAutoresizingMaskIntoConstraints="NO" id="iuM-lO-fcL">
+                                                    <rect key="frame" x="11" y="8" width="35" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="从微信邀请好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HV-y6-90o">
+                                                    <rect key="frame" x="56" y="15" width="256" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PMF-th-zhv" id="7XL-eO-SpN"/>
+                                    <outlet property="delegate" destination="PMF-th-zhv" id="ysb-TC-MH7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yus-A0-wYa">
+                                <rect key="frame" x="197" y="429" width="207" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="复制邀请信息" backgroundImage="invite_button">
+                                    <color key="titleColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SLq-aB-q6x" firstAttribute="top" secondItem="H7E-CQ-wXC" secondAttribute="bottom" constant="6" id="3y6-2C-wks"/>
+                            <constraint firstItem="H7E-CQ-wXC" firstAttribute="top" secondItem="Yoh-6J-bdk" secondAttribute="bottom" constant="36" id="A7r-Ol-r48"/>
+                            <constraint firstAttribute="trailing" secondItem="CfO-dC-60M" secondAttribute="trailing" id="Ddp-4y-HXX"/>
+                            <constraint firstItem="SLq-aB-q6x" firstAttribute="centerX" secondItem="7ew-kG-yFr" secondAttribute="centerX" id="Gzh-Hg-hHw"/>
+                            <constraint firstItem="o5X-Wl-7zW" firstAttribute="centerX" secondItem="7ew-kG-yFr" secondAttribute="centerX" id="Nb1-SJ-xgO"/>
+                            <constraint firstItem="o5X-Wl-7zW" firstAttribute="top" secondItem="SLq-aB-q6x" secondAttribute="bottom" constant="8" id="TcH-m5-LYD"/>
+                            <constraint firstItem="CfO-dC-60M" firstAttribute="leading" secondItem="7ew-kG-yFr" secondAttribute="leading" id="abn-bf-F5D"/>
+                            <constraint firstItem="H7E-CQ-wXC" firstAttribute="centerX" secondItem="7ew-kG-yFr" secondAttribute="centerX" id="caa-8V-qPY"/>
+                            <constraint firstItem="CfO-dC-60M" firstAttribute="top" secondItem="o5X-Wl-7zW" secondAttribute="bottom" constant="34" id="d7m-DV-w94"/>
+                            <constraint firstItem="Yus-A0-wYa" firstAttribute="top" secondItem="CfO-dC-60M" secondAttribute="bottom" constant="49" id="mE8-TO-K2w"/>
+                            <constraint firstItem="Yus-A0-wYa" firstAttribute="centerX" secondItem="7ew-kG-yFr" secondAttribute="centerX" id="vxp-zX-nQF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="邀请" id="BJ7-ma-kgp"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="barImageView" destination="H7E-CQ-wXC" id="Atx-dO-5fU"/>
+                        <outlet property="inviteCopyButton" destination="Yus-A0-wYa" id="L3Y-BJ-M1H"/>
+                        <outlet property="tableView" destination="CfO-dC-60M" id="TTX-1x-Ruq"/>
+                        <outlet property="viewModel" destination="k8o-fj-zq8" id="9bU-5i-02h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocG-5Y-Kf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="k8o-fj-zq8" customClass="XPInviteViewModel"/>
+            </objects>
+            <point key="canvasLocation" x="723" y="514"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="common_wechat" width="35" height="32"/>
+        <image name="invite_button" width="207" height="39"/>
+    </resources>
+</document>

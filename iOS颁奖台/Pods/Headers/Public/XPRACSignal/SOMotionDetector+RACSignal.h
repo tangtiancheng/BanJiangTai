@@ -1,0 +1,1 @@
+../../../XPRACSignal/Source/SOMotionDetector+RACSignal.h

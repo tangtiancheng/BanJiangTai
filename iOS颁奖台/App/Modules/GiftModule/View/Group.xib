@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XPGiftGroupTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_ico" translatesAutoresizingMaskIntoConstraints="NO" id="DP5-PP-mIs">
+                    <rect key="frame" x="14" y="9" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="08v-rr-AfU"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="fzK-Nw-v3f"/>
+                        <constraint firstAttribute="width" constant="25" id="pMS-1E-ur4"/>
+                        <constraint firstAttribute="height" constant="25" id="tcO-cX-1rk"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="08v-rr-AfU"/>
+                            <exclude reference="fzK-Nw-v3f"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxx群组（10人）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbB-JK-OTc">
+                    <rect key="frame" x="45" y="13" width="522" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lbB-JK-OTc" secondAttribute="trailing" constant="33" id="SFw-WJ-oes"/>
+                <constraint firstItem="lbB-JK-OTc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="ZfQ-kC-tgg"/>
+                <constraint firstItem="lbB-JK-OTc" firstAttribute="leading" secondItem="DP5-PP-mIs" secondAttribute="trailing" constant="6" id="aQp-yz-5gN"/>
+                <constraint firstItem="DP5-PP-mIs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="fbc-cA-wed"/>
+                <constraint firstItem="DP5-PP-mIs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="g69-CD-wTO"/>
+                <constraint firstAttribute="bottom" secondItem="lbB-JK-OTc" secondAttribute="bottom" constant="10" id="mGp-lw-bF8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameLabel" destination="lbB-JK-OTc" id="6ms-Ln-NC0"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group_ico" width="34" height="34"/>
+    </resources>
+</document>

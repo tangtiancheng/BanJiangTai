@@ -1,0 +1,19 @@
+{
+  "name": "XPAlertController",
+  "version": "1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "homepage": "https://coding.net/u/huangxinping/p/XPAlertController/git",
+  "authors": {
+    "o0402": "o0402@outlook.com"
+  },
+  "summary": "UIAlertController的自定义版本，优化了UIAlertController非全屏问题，及可对每个选择项进行颜色控制。",
+  "source": {
+    "git": "https://git.coding.net/huangxinping/XPAlertController.git",
+    "tag": "1.0"
+  },
+  "source_files": "Source/*.{h,m}",
+  "requires_arc": true
+}

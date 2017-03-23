@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XPGroupNotShakeView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9n-Zj-5Mq" customClass="XPBaseView">
+                    <rect key="frame" x="164" y="182" width="272" height="235"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_star_ico" translatesAutoresizingMaskIntoConstraints="NO" id="rYT-FF-Rbk">
+                            <rect key="frame" x="87" y="17" width="97" height="91"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="91" id="0pr-KZ-3SU"/>
+                                <constraint firstAttribute="width" constant="97" id="Td9-99-JNV"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SN-up-z9N">
+                            <rect key="frame" x="79" y="174" width="112" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="112" id="5aE-SU-BRe"/>
+                                <constraint firstAttribute="height" constant="41" id="7Bb-54-efE"/>
+                            </constraints>
+                            <state key="normal" title="返回颁奖台" backgroundImage="common_button"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已经参加过该活动，去“颁奖台”查新活动吧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEk-e7-hX0">
+                            <rect key="frame" x="30" y="116" width="213" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="dEk-e7-hX0" firstAttribute="leading" secondItem="w9n-Zj-5Mq" secondAttribute="leading" constant="30" id="7fj-3D-88v"/>
+                        <constraint firstItem="dEk-e7-hX0" firstAttribute="centerX" secondItem="w9n-Zj-5Mq" secondAttribute="centerX" id="917-rf-3fV"/>
+                        <constraint firstItem="rYT-FF-Rbk" firstAttribute="centerX" secondItem="w9n-Zj-5Mq" secondAttribute="centerX" id="L26-Vi-iz9"/>
+                        <constraint firstItem="dEk-e7-hX0" firstAttribute="top" secondItem="rYT-FF-Rbk" secondAttribute="bottom" constant="8" id="ONl-S6-6hy"/>
+                        <constraint firstItem="dEk-e7-hX0" firstAttribute="leading" secondItem="w9n-Zj-5Mq" secondAttribute="leading" constant="29" id="Qer-JT-xGT"/>
+                        <constraint firstItem="0SN-up-z9N" firstAttribute="top" secondItem="dEk-e7-hX0" secondAttribute="bottom" constant="17" id="UZm-WY-ivx"/>
+                        <constraint firstAttribute="trailing" secondItem="0SN-up-z9N" secondAttribute="trailing" constant="81" id="hjJ-nZ-cXl"/>
+                        <constraint firstAttribute="height" constant="235" id="kXW-hL-bcM"/>
+                        <constraint firstAttribute="trailing" secondItem="dEk-e7-hX0" secondAttribute="trailing" constant="30" id="v6H-i4-L1r"/>
+                        <constraint firstAttribute="trailing" secondItem="dEk-e7-hX0" secondAttribute="trailing" constant="29" id="vCT-yo-hpV"/>
+                        <constraint firstItem="rYT-FF-Rbk" firstAttribute="top" secondItem="w9n-Zj-5Mq" secondAttribute="top" constant="17" id="vWY-PK-Uov"/>
+                        <constraint firstItem="0SN-up-z9N" firstAttribute="leading" secondItem="w9n-Zj-5Mq" secondAttribute="leading" constant="79" id="wpD-Fo-Kzd"/>
+                        <constraint firstAttribute="width" constant="272" id="x2o-da-C3Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Qer-JT-xGT"/>
+                            <exclude reference="v6H-i4-L1r"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="w9n-Zj-5Mq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8XT-s5-PH7"/>
+                <constraint firstItem="w9n-Zj-5Mq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RRe-0G-Uwq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="popRootButton" destination="0SN-up-z9N" id="HVw-vn-LFy"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_button" width="174" height="41"/>
+        <image name="common_star_ico" width="97" height="91"/>
+    </resources>
+</document>

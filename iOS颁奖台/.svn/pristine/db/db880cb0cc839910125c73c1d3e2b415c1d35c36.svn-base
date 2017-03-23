@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XPPlainFinishedView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="streamer" translatesAutoresizingMaskIntoConstraints="NO" id="qhE-4R-80H">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNw-d6-bqb">
+                    <rect key="frame" x="291" y="34" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="disabled" backgroundImage="gameOver"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好遗憾 去别的活动看看吧~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaI-Yr-LJI">
+                    <rect key="frame" x="42" y="38.5" width="178" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qaI-Yr-LJI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="A3I-u7-1lr"/>
+                <constraint firstItem="qhE-4R-80H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DgD-zQ-bIg"/>
+                <constraint firstItem="qhE-4R-80H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jvx-Nj-BBA"/>
+                <constraint firstItem="qaI-Yr-LJI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.7" id="N8g-i0-qTK"/>
+                <constraint firstAttribute="bottom" secondItem="qhE-4R-80H" secondAttribute="bottom" constant="-2" id="PvD-58-HdR"/>
+                <constraint firstItem="yNw-d6-bqb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.72" id="RQ1-6C-YLW"/>
+                <constraint firstItem="qaI-Yr-LJI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.3" id="cGq-mt-EYf"/>
+                <constraint firstAttribute="bottom" secondItem="qaI-Yr-LJI" secondAttribute="bottom" constant="20" id="hVw-N1-Zeq"/>
+                <constraint firstAttribute="trailing" secondItem="qhE-4R-80H" secondAttribute="trailing" id="i6W-VH-QB6"/>
+                <constraint firstAttribute="trailing" secondItem="qhE-4R-80H" secondAttribute="trailing" id="qMm-Ls-2kQ"/>
+                <constraint firstAttribute="bottom" secondItem="qaI-Yr-LJI" secondAttribute="bottom" constant="16" id="qr0-Xc-Kw7"/>
+                <constraint firstItem="yNw-d6-bqb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="12" id="xin-zI-kfP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="qMm-Ls-2kQ"/>
+                    <exclude reference="A3I-u7-1lr"/>
+                    <exclude reference="hVw-N1-Zeq"/>
+                    <exclude reference="qr0-Xc-Kw7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="399.5" y="290.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gameOver" width="64" height="29"/>
+        <image name="streamer" width="376" height="69"/>
+    </resources>
+</document>

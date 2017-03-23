@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XPPlainTenSecondCounterView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_number_background" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Hv-xls">
+                    <rect key="frame" x="151" y="200" width="299" height="199"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="199" id="8xp-p1-2ZY"/>
+                        <constraint firstAttribute="width" constant="299" id="J1X-nW-Gep"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_number_9" translatesAutoresizingMaskIntoConstraints="NO" id="IGy-V6-pyf">
+                    <rect key="frame" x="269" y="243" width="61" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="6yO-yL-4Ya"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="115" id="tBr-bZ-SsI"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7vR-Hv-xls" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RZH-jC-AJN"/>
+                <constraint firstItem="IGy-V6-pyf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TpA-GK-bGp"/>
+                <constraint firstItem="IGy-V6-pyf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zsb-xy-hik"/>
+                <constraint firstItem="7vR-Hv-xls" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xh3-nJ-7or"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="counterNumberImageView" destination="IGy-V6-pyf" id="7O0-3w-mCu"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_number_9" width="61" height="115"/>
+        <image name="common_number_background" width="299" height="199"/>
+    </resources>
+</document>

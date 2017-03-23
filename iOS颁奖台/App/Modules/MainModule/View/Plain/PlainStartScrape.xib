@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="26e-Pc-1lD" customClass="XPPlainStartScrapeView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podium_plain_info_background" translatesAutoresizingMaskIntoConstraints="NO" id="eNO-hN-xF9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即刮奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIG-gm-Jo1">
+                    <rect key="frame" x="35" y="16" width="112" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享可获得10奖金币哦" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-4z-ekU">
+                    <rect key="frame" x="210" y="16" width="294" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-tT-FS4">
+                    <rect key="frame" x="521" y="9" width="63" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="FpE-q3-H9A"/>
+                        <constraint firstAttribute="width" constant="63" id="wJA-Jh-y2H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="GO" backgroundImage="podium_button_orange"/>
+                    <state key="disabled" backgroundImage="podium_button_gray"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DIG-gm-Jo1" secondAttribute="bottom" constant="16" id="Ew8-bu-bwM"/>
+                <constraint firstAttribute="bottom" secondItem="dqi-4z-ekU" secondAttribute="bottom" constant="16" id="GqU-Lu-7XJ"/>
+                <constraint firstAttribute="bottom" secondItem="DIG-gm-Jo1" secondAttribute="bottom" constant="20" id="IsU-eH-III"/>
+                <constraint firstAttribute="bottom" secondItem="hdR-tT-FS4" secondAttribute="bottom" constant="9" id="V0p-W2-KbC"/>
+                <constraint firstItem="hdR-tT-FS4" firstAttribute="leading" secondItem="dqi-4z-ekU" secondAttribute="trailing" constant="58" id="W7y-C9-2oQ"/>
+                <constraint firstItem="hdR-tT-FS4" firstAttribute="leading" secondItem="dqi-4z-ekU" secondAttribute="trailing" constant="17" id="dTo-Rl-Qs8"/>
+                <constraint firstItem="DIG-gm-Jo1" firstAttribute="leading" secondItem="26e-Pc-1lD" secondAttribute="leading" constant="35" id="dkp-H6-29W"/>
+                <constraint firstAttribute="trailing" secondItem="hdR-tT-FS4" secondAttribute="trailing" constant="19" id="dw7-Ky-CgD"/>
+                <constraint firstAttribute="bottom" secondItem="dqi-4z-ekU" secondAttribute="bottom" constant="20" id="iFj-j2-Emj"/>
+                <constraint firstItem="hdR-tT-FS4" firstAttribute="leading" secondItem="dqi-4z-ekU" secondAttribute="trailing" constant="58" id="lRZ-c9-hRY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="IsU-eH-III"/>
+                    <exclude reference="iFj-j2-Emj"/>
+                    <exclude reference="W7y-C9-2oQ"/>
+                    <exclude reference="lRZ-c9-hRY"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="shareButton" destination="hdR-tT-FS4" id="fa5-eu-39o"/>
+            </connections>
+            <point key="canvasLocation" x="386" y="299.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="podium_button_gray" width="63" height="29"/>
+        <image name="podium_button_orange" width="63" height="29"/>
+        <image name="podium_plain_info_background" width="375" height="39"/>
+    </resources>
+</document>

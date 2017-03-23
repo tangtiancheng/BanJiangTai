@@ -1,0 +1,1 @@
+../../../XPQRCode/Lib/XPQREncode/Lib/qrspec.h

@@ -1,0 +1,62 @@
+//
+//  TCCollectionViewCell.m
+//  味道demo
+//
+//  Created by 唐天成 on 16/7/6.
+//  Copyright © 2016年 唐天成. All rights reserved.
+//
+
+#import "TCCollectionViewCell.h"
+#import "XPTastStoreModel.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NSString+XPRemoteImage.h"
+
+@interface TCCollectionViewCell()
+@property (nonatomic, strong) XPDashInfoModel *model;
+
+@property (weak, nonatomic) IBOutlet UIView *backGrayView;
+
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+@property(nonatomic,assign)NSInteger count;
+@end
+
+@implementation TCCollectionViewCell
+- (IBAction)addBtnClick:(id)sender {
+    self.backGrayView.hidden=NO;
+    self.count++;
+    [UIView animateWithDuration:0.5 animations:^{
+        self.countLabel.alpha=0.0;
+    } completion:^(BOOL finished) {
+        self.countLabel.alpha=1;
+        self.countLabel.text=[NSString stringWithFormat:@"x %ld",self.count];
+    }];
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+     @weakify(self);
+    self.backGrayView.hidden=YES;
+    RAC(self.imageView, image) = [[RACObserve(self, model.dashImg) flattenMap:^RACStream *(id value) {
+        return value ? [value rac_remote_image] : [RACSignal return :nil];
+    }] deliverOn:[RACScheduler mainThreadScheduler]];
+    
+   
+    RAC(self.dishNameLabel, text) = [RACObserve(self, model.dashName)ignore:nil] ;
+    
+    
+    RAC(self.dishPrice, text) = [[RACObserve(self, model.cutPrize) ignore:nil] map:^id (NSString *cutPrice) {
+        NSLog(@"%@",cutPrice);
+        if([cutPrice isEqualToString: @""]){
+            return [NSString stringWithFormat:@"￥%@", self.model.oldPrize];
+        }
+            return [NSString stringWithFormat:@"￥%@", cutPrice];
+        }];
+
+}
+- (void)bindModel:(XPDashInfoModel *)model
+{
+    NSParameterAssert([model isKindOfClass:[XPDashInfoModel class]]);
+    self.model = model;
+}
+
+@end

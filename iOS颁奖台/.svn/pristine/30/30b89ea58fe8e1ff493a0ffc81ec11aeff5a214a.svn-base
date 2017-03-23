@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6SV-rP-IAI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="DnT-rd-i0z">
+            <objects>
+                <viewController id="6SV-rP-IAI" customClass="XPWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sm4-Xs-r2v"/>
+                        <viewControllerLayoutGuide type="bottom" id="AUh-Cg-3hz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ji7-Jf-hQs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-cP-Dqa" customClass="XPWebView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f7X-cP-Dqa" secondAttribute="trailing" id="YIs-n8-2rJ"/>
+                            <constraint firstItem="f7X-cP-Dqa" firstAttribute="leading" secondItem="Ji7-Jf-hQs" secondAttribute="leading" id="frp-cG-B1J"/>
+                            <constraint firstItem="f7X-cP-Dqa" firstAttribute="top" secondItem="Ji7-Jf-hQs" secondAttribute="top" id="kos-vQ-EiB"/>
+                            <constraint firstItem="AUh-Cg-3hz" firstAttribute="top" secondItem="f7X-cP-Dqa" secondAttribute="bottom" id="l0O-GL-wn4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="f7X-cP-Dqa" id="ssj-rg-oE3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLC-mR-scW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="441"/>
+        </scene>
+    </scenes>
+</document>
